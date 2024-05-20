@@ -11,3 +11,4 @@
     - `data-th-each="student : ${studentList}"` => "For each student in studentList"
    - `<p data-th-text="${student.id}"></p>` => "The text content for this this paragraph element should be whatever the student id is".
    - `<a data-th-href="@{/students/{id} (id=${student.id})}" data-th-text="${student.id}"></a>` => Make a link that includes a variable in the path. Here the variabe `id` is the student id. The text shown by the link is also the student id (otherwise it will be bank and you cannot click on anything).We are using the @ notation because we need access to the objects. Other links that do not include data from the model can be made the regular HTML way.
+- On the browser: http://localhost:8080/students/all
